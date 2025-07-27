@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Slackey&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto Flex", serif;
+
+
+}
+button{
+    padding:10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+/* NAVIGATION */
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, .05);  /* for the header shadow */
+    position: sticky;   /* for sticky header */
+    top:0;           /* for sticky header */
+    margin-bottom:32px;
+    background-color:white;
+    padding:10px;
+    z-index: 50px;   /* pics when hovered don't overlap on the others */
+}
+h1{
+    font-family: "Slackey", serif;
+
+}.bar_icon{
+    font-size:24px;
+}
+.navigation_container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-inline-end:50px; */
+    margin-inline: 32px;
+
+}
+
+/* //hero section */
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    display:flex;
+    gap:50px;
+    justify-content:center;
+    align-items:center;
+    img{
+        border-radius: 70px;
+    }
+}
+
+.hero_content{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    h1{
+        font-size:72px;
+        line-height:1.2;
+        font-weight: 120;
+    }
+
+}
+.tag{
+    background-color:#bb1616;
+    padding: 5px 10px;
+    color:white;
+    align-self:flex-start;   /* property to highlight only the size of text */
+}
+.explore{
+    background: goldenrod;
+    color:white;
+    align-self:flex-start;
+}
+
+.features{
+    margin-top:50px;
+    margin-bottom:50px;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    i{
+        font-size:39px;
+        justify-content: center;
+    }
+}
+.feature{
+    display:flex;
+    gap: 10px;
+    padding:20px;
+    transition: 0.2s ease-in-out;
+
+}
+.feature:hover{
+    transition:0.2s ease-in-out;
+    box-shadow:5px 5px 5px rgba(1,1,1,0.05);
+    
+}
+.divider{
+    border: 1px solid rgb(227, 224, 224);
+    margin:20px 0;
+    
+}
+
+/* MENU SECTION */
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    margin:50px;
+    align-items:center;
+
+}
+.menu .tag{
+    align-self:center;
+}
+.grid{
+    display:grid;
+    gap:10px;
+    grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+    
+}
+.grid-image{
+    border-radius: 10px;
+    transition:0.2s ease-in-out;
+    width:100%;
+    height:100%;
+}
+.grid-image:hover{
+    transform: scale(1.05);   /* pop up image w bigger size */
+    transition:0.2s ease-in-out;
+}
+.item1{
+    grid-area:I1;
+}
+.item2{
+    grid-area:I2;
+}
+.item3{
+    grid-area:I3;
+}
+.item4{
+    grid-area:I4;
+}
+.item5{
+    grid-area:I5;
+}
+.item6{
+    grid-area:I6;
+}
+.item7{
+    grid-area:I7;
+}
+
+/*footer section */
+footer{
+    background-color:rgb(237, 219, 186);
+    display:flex;
+    gap:10px;
+    padding: 30px;
+    justify-content: space-around;
+    h3{
+        color:grey;
+        margin:10px 0;
+    }
+    ul{
+        list-style:none;    /* no arrows or bullets */
+    }
+}
+.newsletter input{
+    padding:5px 40px;
+}
+.socials{
+    display:flex;
+    justify-content: space-around;
+    font-size:28px;
+}
+
+   
+/* RESPONSIVE SITE */
+
+
+@media (max-width:786px){
+    .hero{
+        flex-direction:column;
+
+        .hero_image{
+        display:flex;
+        justify-content: center;
+        }
+
+    img{
+    
+        width: 80%;
+        
+    }
+    .hero_content{
+        gap:10px;
+        padding:10px;
+        h1{
+            font-size: 32px;
+            
+        }
+    }
+     .features{                     /*the features not responsive */
+       
+        flex-direction:column;       /*this command not working*/
+        /* i{
+            flex-direction:column;
+        } */
+
+    }
+    .feature{
+        flex-direction:column; 
+    }
+    .grid-image{
+        border-radius:0px;
+    }
+    .footer-container{
+        flex-direction:column;
+    }}
+}
