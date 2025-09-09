@@ -1,8 +1,8 @@
-##🍜 KOJA Ramen Shop - Restaurant Landing Page
+## 🍜 KOJA Ramen Shop - Restaurant Landing Page
 
 Welcome to **KOJA Ramen** — a modern, responsive landing page for a fictional ramen restaurant. This project showcases a clean and attractive front-end design using HTML and CSS, built to promote a food business with visually appealing sections and user-friendly layout.
 
-🔥 Features
+## 🔥 Features
 
 - ✅ Hero section with bold call-to-action
 - ✅ Promotional tag for discounts
@@ -11,13 +11,13 @@ Welcome to **KOJA Ramen** — a modern, responsive landing page for a fictional 
 - ✅ Responsive design structure
 - ✅ Footer with links, newsletter, and social icons
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - Font Awesome (for icons)
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 1. Clone the repository:
    ```bash
